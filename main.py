@@ -32,7 +32,7 @@ player_friction_x = False
 
 # 플레이어 점프
 player_jump = False
-player_jump_power = 50
+player_jump_power = 35
 
 # 지형 리지드 바디 리스트
 terrain_rigid_body_list = [
@@ -81,7 +81,7 @@ while True:
                 player_rigid_body.velocity_x = 10
 
     # 중력 적용
-    player_rigid_body.apply_force(0, 9.8 * player_rigid_body.mass)
+    player_rigid_body.apply_force(0, 4 * player_rigid_body.mass)
 
     # 플레이어 리지드 바디와 지형 리지드 바디 충돌 감지
     for terrain_rigid_body in terrain_rigid_body_list:
